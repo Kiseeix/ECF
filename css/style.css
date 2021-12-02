@@ -1,0 +1,247 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font: 1em sans-serif;
+  padding: 0;
+  margin: 0;
+  background: #212529;
+}
+
+.container {
+  max-width: none;;
+}
+
+/* Navigation , header */
+.navbar-nav>li>a {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-right: 20px;
+  color: #fff
+}
+
+.navbar-toggler {
+  padding: .20rem .50rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid white
+}
+
+.nav-link {
+  color: #fff !important
+}
+
+.wrapper {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background-color: #000;
+  clip-path: polygon(81% 0, 100% 0, 100% 50%, 100% 100%, 51% 100%);
+  transition: 1s all
+}
+
+.navbar-brand {
+  color: #fff;
+  font-family: 'Allerta Stencil', sans-serif;
+  margin-bottom: 4px;
+  font-size: 27px
+}
+
+.navbar-red:hover .wrapper {
+  clip-path: polygon(81% 0, 100% 0, 100% 50%, 100% 100%, 65% 100%)
+}
+
+.navbar-brand:hover {
+  color: #fff
+}
+
+.navbar-red {
+  background-color: red;
+  color: #fff
+}
+
+#searchBar {
+  width: 30%;
+  
+
+}
+.all-show {
+  z-index: 10
+}
+
+
+form {
+  max-width: 300px;
+  margin: 0;
+  padding: 0 5px;
+}
+
+p>label {
+  display: block;
+}
+
+legend {
+  background-color: #000;
+  color: #fff;
+  padding: 3px 6px;
+}
+
+
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+
+#erreur {
+  color: red;
+}
+
+h1 {
+  text-align: center;
+  background-color: #212529;
+  margin-bottom: 0em;
+  color: azure;
+}
+
+
+.w-100 {
+  width: 100% !important;
+  height: 75vh;
+}
+
+#contenuPrincipal {
+  background-color: #212529;
+}
+
+#album {
+  width: 260px;
+  height: 340px;
+}
+
+#id, #serie, #numero, #titre, #auteur, #prix {
+  background-color: rgb(122, 121, 122);
+  color: white;
+
+}
+
+label {
+  color: white;
+}
+
+#footer {
+  height: 20vh;
+ padding-bottom: 0rem;
+}
+.text-small {
+  font-size: 0.9rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+.form-control {
+ border-color: #545454;
+}
+
+/* Footer */
+footer {
+  background: #212529;
+  border-top: 1px solid white;
+}
+
+
+/* Panier */
+.cart-header {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: white;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: white;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-item-title {
+  color: white;
+  margin-left: .5em;
+  font-size: 1.2em;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.cart-total-title {
+  color: white;
+}
+/* Meteo */
+
+#containerMeteo {
+  background-color: #212529;
+
+}
+
+.box-container {
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;   
+ 
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: azure;
+  border: 1px solid seashell;
+}
+
+#city, #humidity {
+  background-color: rgba(50, 129, 182, 0.75);
+}
+
+#temp, #wind   {
+  background-color: rgba(126, 181, 218, 0.75);
+}
